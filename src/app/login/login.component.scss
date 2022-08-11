@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-image{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%vh;
+}
+.login-container{
+  width: 100%;
+  height: 100vh;
+  position:relative;
+  .logo{
+    font-size:9rem;
+    font-weight: bold;
+    font-family: 'Creepster',cursive;
+    letter-spacing: 0.1rem;
+    position:absolute;
+    top: 5rem;
+    right: 5rem;
+    color: rgb(244, 18, 18);
+  }
+  .desc{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-family: 'Aladin',cursive;
+    letter-spacing: 0.5rem;
+    color: rgb(246, 246, 8);
+    position: absolute;
+    top:18rem;
+    right: 4rem;
+    text-align: right;
+    width: fit-content;
+    background-color: rgba(4, 4, 4, 0.092);
+  }
+  .film{
+    position: absolute;
+    top: 1rem;
+    left: 53rem;
+    width: 18rem;
+  }
+  .login-form{
+    width: 50rem;
+    height: 25rem;
+    padding: 2rem;
+    background-color: rgba(163, 159, 159, 0.498);
+    border-radius:1rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    box-shadow: 0.5rem 0.5rem 2rem #383838;
+    .form-group {
+      margin-top:1.2rem ;
+      color: yellow;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .btn-container{
+      margin-top: 3rem;
+      position: relative;
+      .btn-login{
+        font-size: 1.5rem;
+        width: 7rem;
+        border-radius: 1rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.789);
+        height: 3.5rem;
+
+      }
+      .erro{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 3.2rem;
+        right: 0rem;
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+:root{
+  font-size: 62.5%; /* 1rem = 10px */
+}
+.home-container{
+  display: flex;
+  .all-movies{
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 0.01rem solid rgba(227, 10, 10, 0.761);
+    padding: 2rem ;
+    font-family: "Roboto",sans-serif;
+    .top{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 0.5rem solid red;
+        padding-left: 1rem;
+      }
+      .view-all{
+        color: red;
+        cursor: pointer;
+        margin-right: 0.5rem;
+      }
+    }
+    .movies-thumbnail{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 10rem;
+      .movie{
+
+        .cover{
+          cursor: pointer;
+          img{
+            border-radius: 0.5rem;
+          }
+        }
+        .detail{
+          width: 18rem;
+          .name{
+            font-weight: bold;
+            height: 5rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .popular-movies {
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 2rem 4rem;
+    font-family: "Roboto", sans-serif;
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      border-left: 5rem solid red;
+      padding-left: 1rem;
+    }
+    .movies {
+      .movie {
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .view-all {
+        color: red;
+        text-align: right;
+        margin-top: 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.rating {
+  padding-right: 45px;
+  position: relative;
+  .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+  }
+}
+

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  font-size: 62.5%; /* 1rem = 10px */
+}
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Roboto&family=Creepster&display=swap");
+.sr-only {
+  display: none !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sr-only{
+  display: none !important;
+}

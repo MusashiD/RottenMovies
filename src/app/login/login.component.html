@@ -1,0 +1,24 @@
+<img class="background-image" src="assets/images/backgroudm.jpg" alt="">
+<div class="login-container">
+  <img class="film" src="assets/images/movie.png" alt="movielogo">
+  <div class="logo">
+    Rotten Movies
+  </div>
+  <div class="desc">
+    Uma fonte nem tão segura de recomendação de filmes e series.
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+    </div>
+    <div class="form-group">
+      <label for="pword">Password</label>
+      <input type="text" name="pword" class="form-control" [(ngModel)]="password">
+    </div>
+    <div class="btn-container">
+      <div class="erro">{{errorMessage}}</div>
+      <button class="btn-login" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>

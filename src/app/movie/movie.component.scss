@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.movie-container {
+  width: 140rem;
+  margin: 0 auto;
+  padding: 5rem;
+  .top {
+    display: flex;
+    .left {
+      width: 45rem;
+      .name {
+        font-size: 3.6rem;
+        font-weight: bold;
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        .rating-value {
+          margin-left: 2rem;
+          font-weight: bold;
+        }
+      }
+      .cover {
+        width: 40rem;
+        height: 50rem;
+        margin-right: 5rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .right {
+      width: 90rem;
+      padding-top: 10rem;
+      .title {
+        margin-bottom: 3rem;
+        font-size: large;
+        font-weight: bold;
+      }
+      .rating-form {
+        .btn-container{
+          margin-top: 3rem;
+          position: relative;
+          .btn-dark{
+            font-size: 1.5rem;
+            width: 7rem;
+            border-radius: 1rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.789);
+            height: 3.5rem;
+
+          }
+        }
+
+        .form-group {
+          margin-top: 2rem;
+
+          .rating {
+            margin-top: -1.3rem;
+          }
+          label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+          textarea {
+            resize: none;
+          }
+        }
+        .btn-container {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+  .bottom {
+    margin-top: 5rem;
+    .title {
+      margin-bottom: 3rem;
+    }
+    .reviews {
+      width: 100rem;
+      .review {
+        margin-bottom: 2.5rem;
+        background-color: #f1f1f1;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        .review-details {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          .review-left {
+            .author {
+              font-size: 1.8rem;
+              font-weight: bold;
+            }
+            .author-dt {
+              opacity: 0.7;
+            }
+          }
+          .review-right {
+            .rating {
+              display: flex;
+              align-items: center;
+              .rating-value {
+                margin-left: 2rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .review-text {
+          font-style: italic;
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+      }
+      .no-reviews {
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
